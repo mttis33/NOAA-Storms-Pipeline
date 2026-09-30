@@ -3,7 +3,7 @@
 # pipeline.sh: Download a year of NOAA Storm Events and convert it to GeoParquet.
 #
 # Usage:   ./pipeline.sh [YEAR]
-# Example: ./pipeline.sh 2024
+# Example: ./pipeline.sh 2025
 #
 # Requires: bash, curl, gunzip, ogr2ogr (GDAL >= 3.5 with the Parquet driver)
 
@@ -14,7 +14,7 @@ set -euo pipefail
 # -----------------------------------------------------------------------------
 
 # Year to pull. Override by passing it as the first argument.
-YEAR="${1:-2024}"
+YEAR="${1:-2025}"
 
 # NOAA publishes each year with a creation date in the file name (c<YYYYMMDD>).
 # Update CREATED_DATE if NOAA republishes a year or the download returns a 404.

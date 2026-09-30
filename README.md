@@ -4,7 +4,7 @@ A one-command pipeline that downloads a year of NOAA Storm Events data, converts
 
 ## What it does
 
-`pipeline.sh` takes a year (default: 2024), pulls the raw `details` file from NOAA's public archive, decompresses it, and converts it to a single GeoParquet file at `data/processed/storms_{YEAR}.parquet`.
+`pipeline.sh` takes a year (default: 2025), pulls the raw `details` file from NOAA's public archive, decompresses it, and converts it to a single GeoParquet file at `data/processed/storms_{YEAR}.parquet`.
 
 Total runtime: about 90 seconds for a typical year on a home internet connection.
 
@@ -28,7 +28,7 @@ chmod +x pipeline.sh
 To run for a specific year:
 
 ```bash
-./pipeline.sh 2025
+./pipeline.sh 2023
 ```
 
 ## What I Learned

@@ -28,7 +28,7 @@ chmod +x pipeline.sh
 To run for a specific year:
 
 ```bash
-./pipeline.sh 2023
+./pipeline.sh 2025
 ```
 
 ## What I Learned
